@@ -3,13 +3,15 @@
 
 ## Getting started
 
-`$ npm install react-native-scratch --save`
+`$ npm i react-native-scratch`
 
-### Mostly automatic installation
+There is no need for additional steps for RN 0.60 and above.
+
+### Mostly automatic installation (RN <= 0.59)
 
 `$ react-native link react-native-scratch`
 
-### Manual installation
+### Manual installation (RN <= 0.59)
 
 
 #### iOS
@@ -81,7 +83,7 @@ class MyView extends Component {
 				onTouchStateChanged={this.onTouchStateChangedMethod} // Touch event (to stop a containing FlatList for example)
 				onScratchProgressChanged={this.onScratchProgressChanged} // Scratch progress event while scratching
 				onScratchDone={this.onScratchDone} // Scratch is done event
-			/>}
+			/>
 		</View>)
 	}
 
